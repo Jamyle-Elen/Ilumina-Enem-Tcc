@@ -111,12 +111,9 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 844px) {
   /*media faz com que o site nao fique todo bagunçado quando for pra versao mobile, mas isso na questao do menu*/
 
-  /*49 <-- falas do dorminhoco 
-  eieiei paro eu tava sonolento
-  */
   .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -208,7 +205,7 @@ h4,
 h5,
 h6 {
   font-weight: 900;
-  color: #000;
+  color: rgb(0, 0, 0);
   
 }
 
@@ -300,9 +297,7 @@ section.module.parallax:after {
   /*filho*/
   z-index: 8;
   /*mostra qual a ordem, "um elemento com maior ordem de pilha sempre ta na frente de quem ta com o menor numero*/
-  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+
 }
 
 /*esses ai de cima foram tudo efeitos roubados ^*/
@@ -331,7 +326,7 @@ section.module.parallax h2 {
   color: #FFF;
   text-align: center;
   font-size: 85px;
-  z-index: 50;
+  z-index: 4;
   text-transform: uppercase;
   -webkit-text-stroke: #000;
   -webkit-text-stroke-width: 3px;
@@ -342,7 +337,7 @@ section.module.parallax .titulo {
   color: #FFF;
   text-align: center;
   font-size: 85px;
-  z-index: 50;
+  z-index: 4;
   text-transform: uppercase;
   -webkit-text-stroke: #000;
   -webkit-text-stroke-width: 3px;
@@ -386,7 +381,7 @@ section.module.parallax .titulo {
 }
 
 #btnTop img {
-  width: 30px;
+  width: 30px; 
 }
 
 /*-------------------------*/
