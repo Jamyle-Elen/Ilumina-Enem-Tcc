@@ -32,9 +32,10 @@ header {
 
 .nav-bar {
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 6rem;
+  justify-content: space-around;
+  padding: 1.5rem 5rem;
   height: 20px; /*30px orgin*/
+
 }
 
 .logo {
@@ -50,6 +51,8 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+
 }
 
 .nav-list a:hover {
@@ -76,6 +79,158 @@ header {
   color: #fff;
   font-weight: 400;
 }
+/*---------------menu responsive--------------------*/
+
+.menubar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(19, 18, 18);
+  width: 100%;
+  height: 4vh;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+
+  
+}
+
+.menu-logo {
+  width: 50px;
+  height: 7vh;
+}
+
+.menu-logo img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.menu-logo :hover {
+  color: rgb(161, 225, 98);
+  width: 80px;
+  height: 80px;
+  transition: 0.9s;
+  background: rgba(37, 37, 37, 1);
+}
+
+.b1,
+.b2,
+.b3 {
+  border-radius: 22px;
+}
+
+
+.icon-menu {
+  height: 70%;
+  width: 50px;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  bottom: 0%;
+}
+
+.icon-menu div {
+  width: 50px;
+  height: 20%;
+  background: white;
+  margin: 6% 0;
+  transition: 0.75s;
+
+}
+
+.menubar :hover>.sidebar {
+  left: 0;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  letter-spacing: 3px;
+  width: 15%;
+  font-family: Verdana, sans-serif;
+}
+
+.menu li {
+  margin: 0 3%;
+}
+
+.info {
+  color: rgb(231, 230, 230);
+  text-align: center;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(231, 230, 230);
+  
+}
+
+li a{
+  text-decoration: none;
+}
+
+.sidebar {
+
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  background: rgb(18, 18, 24);
+  left: -9416px;
+  border-right: 10px rgba(59, 57, 57, 0.3) solid;
+  top: 0;
+  transition: 0.30s;
+}
+
+
+.sidebar h1 {
+  text-align: center;
+  color: white;
+  height: 3.5vh;
+  margin-bottom: 5%;
+  margin-top: 30px;
+  
+}
+
+.sidebar ul>li {
+  
+  height: 100%;
+  text-align: center;
+  border-bottom: rgba(255, 255, 255, 0.3)solid;
+  
+  line-height: 7vh;
+}
+
+.sidebar ul :hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(138, 138, 163, 0.3);
+  text-decoration: none;
+}
+
+.sidebar ul li :hover {
+  color: rgba(135, 255, 255, 0.9);
+  border-left: 6px rgba(133, 255, 255, 1) solid;
+  position: relative;
+  transition: 1s;
+  
+}
+
+.sidebar ul li :hover>ul {
+  color: rgba(0, 255, 191, 0.9);
+  position: absolute;
+  top: -60pt;
+  background: rgb(21, 21, 22);
+  left: 100%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+
+.sidebar ul li a:hover> ul li a{
+  border-bottom: rgba(255, 255, 255, 0.5) solid;
+}
+
 
 .menu-menu {
   cursor: pointer;
@@ -111,8 +266,17 @@ header {
   display: none;
 }
 
+.vlt {
+  color: #fff;
+  /*terminar*/
+}
+
 @media screen and (max-width: 844px) {
   /*media faz com que o site nao fique todo bagunçado quando for pra versao mobile, mas isso na questao do menu*/
+
+  .nav-list {
+    display: none;
+  }
 
   .nav-bar {
     padding: 1.5rem 4rem;
@@ -135,12 +299,27 @@ header {
     border: none;
     cursor: pointer;
   }
+
+  .up {
+    width: 35px;
+  }
+
+  .imgup {
+    width: 25px;
+  }
+
+}
+
+@media screen and (min-width: 844px) {
+  .menubar {
+    display: none;
+  }
+  
 }
 
 .mobile-menu ul {
   display: flex;
   flex-direction: column;
-  /*essa bomba nem funcionou*/
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -171,11 +350,6 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  /* coloquei em % pra nn bugar a barra lateral
-  tava em vh e vw
-  
-  no cell resolveu o bug nn sei no pc
-  */
 }
 
 .caule {
@@ -290,12 +464,12 @@ section.module.parallax {
 }
 
 section.module.parallax:after {
-  content: "";
+
   height: 100%;
   width: 100%;
   position: absolute;
   /*filho*/
-  z-index: 8;
+  z-index: 5;
   /*mostra qual a ordem, "um elemento com maior ordem de pilha sempre ta na frente de quem ta com o menor numero*/
 
 }
@@ -378,6 +552,7 @@ section.module.parallax .titulo {
   border: none;
   border-radius: 90%;
   display: none;
+
 }
 
 #btnTop img {

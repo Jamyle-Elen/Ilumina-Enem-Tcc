@@ -99,6 +99,13 @@ a:hover {
   background: rgba(37, 37, 37, 1);
 }
 
+.b1,
+.b2,
+.b3 {
+  border-radius: 22px;
+}
+
+
 .icon-menu {
   height: 70%;
   width: 50px;
