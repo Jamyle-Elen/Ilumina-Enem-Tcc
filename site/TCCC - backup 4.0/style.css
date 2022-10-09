@@ -173,14 +173,15 @@ li a{
 
 .sidebar {
 
-  width: 40%;
+  width: 50%;
   height: 100vh;
   position: fixed;
   background: rgb(18, 18, 24);
-  left: -9416px;
+  right: -9416px;
   border-right: 10px rgba(59, 57, 57, 0.3) solid;
   top: 0;
   transition: 0.30s;
+  z-index: 1;
 }
 
 
@@ -193,12 +194,18 @@ li a{
   
 }
 
+.sidebar h2 {
+  color: rgb(21, 21, 22);
+  text-align: right;
+  right: 56px;
+  width: 90%;
+}
+
 .sidebar ul>li {
   
   height: 100%;
   text-align: center;
   border-bottom: rgba(255, 255, 255, 0.3)solid;
-  
   line-height: 7vh;
 }
 
@@ -216,21 +223,9 @@ li a{
   
 }
 
-.sidebar ul li :hover>ul {
-  color: rgba(0, 255, 191, 0.9);
-  position: absolute;
-  top: -60pt;
-  background: rgb(21, 21, 22);
-  left: 100%;
-  width: 70%;
-  border-radius: 10px;
-}
-
-
 .sidebar ul li a:hover> ul li a{
   border-bottom: rgba(255, 255, 255, 0.5) solid;
 }
-
 
 .menu-menu {
   cursor: pointer;
@@ -308,13 +303,18 @@ li a{
     width: 25px;
   }
 
+
+
 }
 
 @media screen and (min-width: 844px) {
   .menubar {
     display: none;
   }
-  
+
+  input #scales {
+    display: flex;
+  }
 }
 
 .mobile-menu ul {
