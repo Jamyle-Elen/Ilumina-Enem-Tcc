@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fav/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="VMexclusiva.css">
     <link rel="stylesheet" href="../style.css">
     <title>Calk@</title>
@@ -13,13 +14,15 @@
 
     <div class="all">
         <div class="ufpe">
-            <h1>UFPE - Campus Recife/Caruaru PE</h1>
+            <a href="https://www.ufpe.br" target="_blank">
+                <h1>UFPE - Campus Recife/Caruaru PE</h1>
+            </a>
             <div class="box">
-                <input type="number" id="n1">
-                <input type="number" id="n2">
-                <input type="number" id="n3">
-                <input type="number" id="n4">
-                <input type="number" id="n5">
+                <input type="number" id="n1" placeholder="Linguagens">
+                <input type="number" id="n2" placeholder="Ciências Humanas">
+                <input type="number" id="n3" placeholder="Ciências da Natureza ">
+                <input type="number" id="n4" placeholder="Matemática">
+                <input type="number" id="n5" placeholder="Redação">
             <div>
             <button onclick="calcular()">Buscar</button>
             </div>
@@ -28,27 +31,26 @@
 
 
         <div class="ufrpe">
-            <h1>UFRPE - Campus Recife/Caruaru PE</h1>
+            <a href="https://www.ufrpe.br" target="_blank">
+                <h1>UFRPE - Campus Recife/Caruaru PE</h1>
+            </a>
             <div class="box">
-                <input type="number" id="n1">
-                <input type="number" id="n2">
-                <input type="number" id="n3">
-                <input type="number" id="n4">
-                <input type="number" id="n5">
+                <input type="number" id="n1" placeholder="Linguagens">
+                <input type="number" id="n2" placeholder="Ciências Humanas">
+                <input type="number" id="n3" placeholder="Ciências da Natureza ">
+                <input type="number" id="n4" placeholder="Matemática">
+                <input type="number" id="n5" placeholder="Redação">
             <div>
             <button onclick="calcular()">Buscar</button>
             </div><br>
-            <h4><a href="../index.html">Back</a></h4>
+            <h4><a class="voltar" href="../index.html">→Back</a></h4>
             </div>
         </div>
-
+        
     </div>
-
 
     <script>
         function calcular() {
-
-            
 
             var n1 = document.getElementById("n1").value
             var n2 = document.getElementById("n2").value
@@ -56,27 +58,167 @@
             var n4 = document.getElementById("n4").value
             var n5 = document.getElementById("n5").value
 
-            var media = (Number(n1) + Number(n2) + Number(n3) + Number (n4) + Number (n5) /5)
+            var media = ((Number(n1) + Number(n2) + Number(n3) + Number (n4) + Number (n5)) /5)
 
-            if(media >= 500) {
+            if(media >= 200) {
 
-                document.write("Engenharia Cartográfica E De Agrimensur: 573.03 Recife - PE")
+                document.write ("<br><center><h2><em>Sua média é: <em><span style='color:#f85a69'>",media,"</span></h2></center><br>");
+
+                document.write("<center><p>Engenharia Cartográfica E De Agrimensur: <strong>573.03</strong> Recife - PE</p></center>")
             
-                document.write("Geologia - 583.34")
-                /*
-                document.write("Secretariado Executivo - 587.69")
-                document.write("Educação Física - 588.16")
-                document.write("Pedagogia - 596.48")
-                document.write("Letras Espanhol - 599.61")
-                document.write("")
-                document.write("")
-                document.write("")
-                */
+                document.write("<center><p>Geologia - <strong>583.34</strong></p></center>")
+                
+                document.write("<center><p>Secretariado Executivo - <strong>587.69</strong></p></center>")
 
+                document.write("<center><p>Educação Física	<strong>588.16</strong> Recife - PE</p></center>")
 
+                document.write("<center><p>Pedagogia	<strong>596.48</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Letras Espanhol	<strong>599.61</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Geografia	<strong>599.98</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Expressão Gráfica <strong>601.19</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Educação Física	<strong>602.88</strong>	Campus Vitória	Vitória de Santo Antão - PE</p></center>")
+
+                document.write("<center><p>Engenharia De Minas	<strong>607.52</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Hotelaria	<strong>607.82</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Química	<strong>614.82</strong>	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Biblioteconomia	<strong>615.53</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Química	<strong>616.4</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Biológicas Ênfase Em Ciências Ambientais <strong>617.46</strong> Recife -PE</p></center>")
+
+                document.write("<center><p>Turismo	<strong>617.47</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Museologia	<strong>618.9</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Saúde Coletiva	<strong>620.14</strong>	Campus Vitória	Vitória de Santo Antão - PE</p></center>")
+
+                document.write("<center><p>Filosofia	<strong>620.93</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Química Industrial <strong>621.16</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Atuariais <strong>621.17</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Arqueologia	<strong>625.95</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Sociais	<strong>628.11</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Letras Francês <strong>630.95</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Serviço Social <strong>634.91</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Biológicas	<strong>635.29</strong>	Campus Vitória	Vitória de Santo Antão - PE</p></center>")
+
+                document.write("<center><p>Oceanografia	<strong>635.63</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Pedagogia	<strong>641.1</strong> Caruaru - PE</p></center>")
+
+                document.write("<center><p>Ciências Biológicas	<strong>641.84</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Interdisciplinar Em Ciência E Tecnologia	<strong>642.59</strong>	<em>Campus Do Agreste Caruaru</em>	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Física	<strong>642.93</strong>	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Abi Engenharia	<strong>647.2</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Matemática	<strong>649.64</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Letras Português	<strong>650.11</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Estatística	<strong>651.45</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Física	657.74	Campus UniverDesign	<strong>661.59</strong>	Caruaru - PE</p></center>")
+
+                document.write("<center><p>História	<strong>663.12</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Letras	<strong>663.35</strong> Recife - PE</p></center>")
+
+                document.write("<center><p>Terapia Ocupacional	<strong>664.81</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Teatro	<strong>666.06</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Gestão Da Informação	<strong>666.72</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Letras Inglês	<strong>669.37</strong>	Campus </p></center>")
+
+                document.write("<center><p>Ciência Política	<strong>669.45</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Administração <strong>671.67</strong>	Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Econômicas	674.67	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Administração	675.06	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Engenharia De Produção	676.83	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Nutrição	677.83	Campus Vitória	Vitória de Santo Antão - PE</p></center>")
+
+                document.write("<center><p>Rádio, Tv E Internet	679.25	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Ciências Econômicas	684.9	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Fonoaudiologia	686.56	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Design	693.49	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Artes Visuais	693.82	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Farmácia	699.33	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Matemática	701.24	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Engenharia De Produção	704.44	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Cinema E Audiovisual	706.25	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Nutrição	707.25	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Comunicação Social	709.84	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Publicidade E Propaganda	712.64	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Enfermagem	714.2	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Engenharia Civil	717.54	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+
+                document.write("<center><p>Jornalismo	718.74	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Fisioterapia	719.01	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Biomedicina	732.92	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Enfermagem	734.72	Campus Vitória	Vitória de Santo Antão - PE</p></center>")
+
+                document.write("<center><p>Psicologia	735.73	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Direito	746.9	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Odontologia	749.88	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Engenharia Biomédica	750.28	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Arquitetura E Urbanismo	754.28	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Engenharia Da Computação	770.26	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Ciência Da Computação	773.39	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Sistemas De Informação	775.61	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Medicina	839.08	Campus Universitário Cidade Do Recife	Recife - PE</p></center>")
+
+                document.write("<center><p>Medicina	859.46	Campus Do Agreste Caruaru	Caruaru - PE</p></center>")
+                
             }
-
         }
+
     </script>
 </body>
 </html>
