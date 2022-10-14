@@ -173,15 +173,15 @@ li a{
 
 .sidebar {
 
-  width: 50%;
+  width: 100%;
   height: 100vh;
   position: fixed;
   background: rgb(18, 18, 24);
   right: -9416px;
   border-right: 10px rgba(59, 57, 57, 0.3) solid;
   top: 0;
-  transition: 0.30s;
-  z-index: 1;
+  transition: .30s;
+  z-index: 5;
 }
 
 
@@ -207,12 +207,14 @@ li a{
   text-align: center;
   border-bottom: rgba(255, 255, 255, 0.3)solid;
   line-height: 7vh;
+  z-index: 5;
 }
 
 .sidebar ul :hover {
   color: rgba(255, 255, 255, 1);
   background: rgba(138, 138, 163, 0.3);
   text-decoration: none;
+  z-index: 5;
 }
 
 .sidebar ul li :hover {
@@ -220,11 +222,13 @@ li a{
   border-left: 6px rgba(133, 255, 255, 1) solid;
   position: relative;
   transition: 1s;
+  z-index: 5;
   
 }
 
 .sidebar ul li a:hover> ul li a{
   border-bottom: rgba(255, 255, 255, 0.5) solid;
+  z-index: 5;
 }
 
 .menu-menu {
@@ -469,12 +473,9 @@ section.module.parallax:after {
   width: 100%;
   position: absolute;
   /*filho*/
-  z-index: 5;
   /*mostra qual a ordem, "um elemento com maior ordem de pilha sempre ta na frente de quem ta com o menor numero*/
 
 }
-
-/*esses ai de cima foram tudo efeitos roubados ^*/
 
 section.module.parallax-1 {
   background-image: url(fundos/livros4.png);
@@ -486,9 +487,12 @@ section.module.parallax-2 {
   /*segunda imagem*/
 }
 
-section.module.parallax-1 h2 {
+section.module.parallax-1 h2 .titulo {
   justify-self: start;
+  z-index: 1;
 }
+
+
 
 section.module.parallax-3 {
   background-image: url("fundos/estudos4.jpg");
@@ -500,7 +504,7 @@ section.module.parallax h2 {
   color: #FFF;
   text-align: center;
   font-size: 85px;
-  z-index: 4;
+  z-index: 1;
   text-transform: uppercase;
   -webkit-text-stroke: #000;
   -webkit-text-stroke-width: 3px;
@@ -511,7 +515,18 @@ section.module.parallax .titulo {
   color: #FFF;
   text-align: center;
   font-size: 85px;
-  z-index: 4;
+  z-index: 0;
+  text-transform: uppercase;
+  -webkit-text-stroke: #000;
+  -webkit-text-stroke-width: 3px;
+}
+
+section.module.parallax h2 {
+  /*ilumina enem*/
+  color: #FFF;
+  text-align: center;
+  font-size: 85px;
+  z-index: 0;
   text-transform: uppercase;
   -webkit-text-stroke: #000;
   -webkit-text-stroke-width: 3px;

@@ -45,10 +45,12 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 5%;
+    top: -7%; /*top: 5%*/
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: red solid;
+    height: 100%;
 }
 
 .all .ufpe .box {
@@ -104,6 +106,8 @@ button {
     text-decoration: none;
     color: #000;
     font-size: 15px;
+    display: flex;
+    padding-top: 25px;
 }
 
 .all h4 a:hover {
@@ -111,12 +115,6 @@ button {
     color: rgb(102, 46, 206);
     font-size: 20px;
     transition: .7s;
-}
-
-@media screen and (max-width: 1130px){
-    body {
-
-    }
 }
 
 @media screen and (max-width: 1130px) {
