@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 html {
@@ -19,7 +20,6 @@ body {
     height: 100%;
     overflow: hidden;
     background-size: cover;
-    
 }
 
 .all {
@@ -49,7 +49,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: red solid;
     height: 100%;
 }
 
@@ -76,7 +75,6 @@ body {
     display: flex;
     padding-top: 15px;
     text-align: center;
-    
 }
 
 
